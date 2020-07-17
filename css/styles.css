@@ -142,9 +142,9 @@ body {
     border: none;
     cursor: pointer; }
   .btn:hover {
-    transform: translateY(-0.3rem);
+    transform: translateY(-3px);
     /* box-shadow: 0 10px 20px rgba($color-black,0.2); */
-    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
@@ -156,7 +156,7 @@ body {
     outline: none;
     /* background-color: black; */
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
     background-color: #fff;
     color: #777; }
