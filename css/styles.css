@@ -1,3 +1,21 @@
+/*
+0-600px    :Phone
+600-900px  :Tablet portrait 
+900-1200px :Tablet landscape 
+[1200-1800] is where our normal styles apply
+1800px +   :Big desktop
+
+$breakpoint arguement  choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > genral layout  + grid  > page layout > components 
+1em = 16px
+
+ 600px/16px = 37.5em ...
+*/
 @keyframes moveToRight {
   0% {
     opacity: 0;
@@ -34,12 +52,29 @@
   box-sizing: inherit; }
 
 html {
-  /* font-size: 10px; */
-  /*
+  /* font-size: 10px; 
+  
     100%=16px  
       10/16 =62.5%
+  
+  // This defines what 1rem is .
+    1rem=10px 
   */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* 
+  @include respond(phone) {
+    font-size: 30%;
+  }
+  */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
