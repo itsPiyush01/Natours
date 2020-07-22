@@ -25,7 +25,7 @@
     display: block;
     // width: 100%;
     text-align: center;
-    height: 110vh;
+    height: 100vh;
   }
   &__content {
     @include absCenter;
@@ -79,7 +79,7 @@
       // position: relative;
       width: 50%;
       background-size: cover;
-      height: 20rem;
+      height: 15rem;
     }
   }
   &__text {
@@ -104,6 +104,7 @@
       column-gap: 0; //gap between two columns ,default is 1em=14px
       column-rule: none;
       text-align: justify;
+      margin-bottom: 2rem;
     }
   }
   // Open states
